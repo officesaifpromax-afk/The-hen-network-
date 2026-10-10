@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>The HEN Network (THN)</title>
+    <style>
+        body {
+            /* وضع الصورة التي اخترتها كخلفية كاملة للشاشة */
+            background-image: url('https://i.pinimg.com/736x/c0/e0/5b/c0e05b756143ce72a9af33a3bcd6d6da.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #000000; /* خلفية احتياطية سوداء */
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding-top: 40px;
+            margin: 0;
+        }
+        
+        /* طبقة تظليل سوداء خفيفة لتوضيح الكلام فوق الخلفية */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 45px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+            margin-bottom: 5px;
+        }
+
+        .highlight {
+            color: #e50914; /* لون أحمر مميز لـ THN */
+            font-weight: bold;
+        }
+
+        p {
+            color: #e0e0e0;
+            font-size: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* التصميم العام للأزرار */
+        .btn {
+            color: #ffffff;
+            border: none;
+            padding: 18px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px;
+            cursor: pointer;
+            border-radius: 12px;
+            width: 340px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 1. زر أحمر (مهم وخطر): لتفعيل الحساب الوهمي والتعديل الأساسي */
+        .btn-danger {
+            background-color: #dc3545;
+        }
+        .btn-danger:hover {
+            background-color: #bd2130;
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px #dc3545;
+        }
+
+        /* 2. زر أزرق (العادي): لتفعيل الإضافات والـ DLCs */
+        .btn-normal {
+            background-color: #007bff;
+        }
+        .btn-normal:hover {
+            background-color: #0069d9;
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px #007bff;
+        }
+
+        /* 3. زر أخضر (سهل جداً): لمعلومات النظام والمساعدة */
+        .btn-easy {
+            background-color: #28a745;
+        }
+        .btn-easy:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px #28a745;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- طبقة التظليل للخلفية -->
+    <div class="overlay"></div>
+
+    <div class="container">
+        <!-- شعار مشروعك الكبير -->
+        <h1>The HEN Network (<span class="highlight">THN</span>)</h1>
+        <p>مرحباً بك في لوحة تحكم شبكة الـ PS4 المعدل المخصصة لألعاب PKG</p>
+
+        <!-- الأزرار حسب توزيع الألوان الخاص بك -->
+        
+        <!-- زر أحمر: مهم وخطر -->
+        <button class="btn btn-danger" onclick="loadHen()">تفعيل الـ HEN & Fake PSN [مهم]</button>
+        
+        <!-- زر أزرق: عادي -->
+        <button class="btn btn-normal" onclick="enableDLC()">تفعيل الإضافات Offline DLC</button>
+        
+        <!-- زر أخضر: سهل جداً -->
+        <button class="btn btn-easy" onclick="showInfo()">معلومات النظام وحالة الاتصال [سهل]</button>
+    </div>
+
+    <script>
+        // الأكواد التفاعلية مع اللاعب
+        function loadHen() {
+            alert("تنبيه: جاري تشغيل كود الـ HEN الحساس وسيرفر THN الوهمي...");
+        }
+
+        function enableDLC() {
+            alert("جاري فك قفل الإضافات والـ DLCs لألعاب الـ PKG بنجاح.");
+        }
+
+        function showInfo() {
+            alert("حالة نظام THN: جاهز ومستقر 100% على جهازك.");
+        }
+    </script>
+
+</body>
+</html>
